@@ -1,10 +1,11 @@
-import { combineReducers } from 'redux'
-import locationReducer from './location'
+import { combineReducers } from 'redux';
+import NavLinks from '../reducers/reducer-nav-links';
+import Content from '../reducers/reducer-content';
 
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
-    location: locationReducer,
-    ...asyncReducers
+    navLinks: NavLinks,
+    content: Content
   })
 }
 
