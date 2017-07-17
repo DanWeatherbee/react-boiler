@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux';
 import NavLinks from '../reducers/reducer-nav-links';
 import Content from '../reducers/reducer-content';
+import ContentBackGround from '../reducers/reducer-content-images';
 
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
     navLinks: NavLinks,
-    content: Content
+    content: Content,
+    bground: ContentBackGround
   })
 }
 

@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import NavLinks from '../containers/site-navbar';
 import ContentView from '../components/content-view';
 import HeaderView from '../components/header-view';
+import Jquery223 from '../javascripts/lib/jquery-2.2.3.min';
+import BootStrap from '../javascripts/bootstrap.min';
 
 class App extends React.Component {
   static propTypes = {

@@ -1,5 +1,6 @@
 import React from 'react';
-import HomeImg from '../images/image1.jpg';
+import { bground } from '../reducers/reducer-content-images';
+import {connect} from 'react-redux';
 
 const style = {
     width: "100%",
@@ -7,8 +8,17 @@ const style = {
 }
 class HeaderView extends React.Component {
 
-    render () {return <img style={style} src={HomeImg}/>}
-
+    render () {
+        return <img style={style} src={this.props.bground[1].src} />
+        }
 }
 
-export default HeaderView
+
+// "state.bground" is set in store/reducers.js
+function mapStateToProps(state) {
+    return {
+        bground: state.bground
+    };
+}
+
+export default connect(mapStateToProps)(HeaderView);

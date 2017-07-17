@@ -1,28 +1,17 @@
 @import 'base';
 @import '../stylesheets/bootstrap';
-// Some best-practice CSS that's useful for most apps
-// Just remove them if they're not what you want
+@import '_container-view';
+// App Variables
+$home-page-body-img: url('../images/bg-2.jpg') no-repeat fixed center;
 
-
-// View Container Variables
-
-$content-view-background-color: darkslategrey;
-$content-view-text-color: white;
-$content-view-padding: 20%;
-$content-view-font-size: 1.5em;
-
-// View Container
-
-.content-view {
-        background: $content-view-background-color;
-        color: $content-view-text-color;
-        padding: $content-view-padding;
-        font-size: $content-view-font-size;
+#root,
+body,
+html {
+  background: $home-page-body-img;
 }
 
-// Navbar Variables
 
-$navbar-background-color: lightgrey;
+// Navbar Variables
 $navbar-position: fixed;
 $navbar-center: center;
 $navbar-padding: 0 0 0 0;
@@ -30,16 +19,26 @@ $navbar-links-margin: 1% 2% 1% 2%;
 $navbar-links-padding: 1%;
 
 // Navbar
-
 .navbar {
-        background-color : $navbar-background-color;
-        position: $navbar-position;
-        text-align: $navbar-center;
-        padding: $navbar-padding;
-        width: 100%;
+  z-index: 1;
+  position: $navbar-position;
+  text-align: $navbar-center;
+  padding: $navbar-padding;
+  width: 100%;
+  -webkit-box-shadow: -1px 11px 10px -7px rgba(252, 252, 252, 1);
+  -moz-box-shadow: -1px 11px 10px -7px rgba(252, 252, 252, 1);
+  box-shadow: -1px 11px 10px -7px rgba(252, 252, 252, 1);
+  background: rgba(78, 85, 126, 1);
+  background: -moz-linear-gradient(top, rgba(78, 85, 126, 1) 0%, rgba(37, 44, 86, 0.1) 59%, rgba(8, 16, 58, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(78, 85, 126, 1)), color-stop(59%, rgba(37, 44, 86, 0.1)), color-stop(100%, rgba(8, 16, 58, 1)));
+  background: -webkit-linear-gradient(top, rgba(78, 85, 126, 1) 0%, rgba(37, 44, 86, 0.1) 59%, rgba(8, 16, 58, 1) 100%);
+  background: -o-linear-gradient(top, rgba(78, 85, 126, 1) 0%, rgba(37, 44, 86, 0.1) 59%, rgba(8, 16, 58, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(78, 85, 126, 1) 0%, rgba(37, 44, 86, 0.1) 59%, rgba(8, 16, 58, 1) 100%);
+  background: linear-gradient(to bottom, rgba(78, 85, 126, 1) 0%, rgba(37, 44, 86, 0.1) 59%, rgba(8, 16, 58, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e557e', endColorstr='#08103a', GradientType=0);
 }
 
-.navbar > a {
-        padding: $navbar-links-padding;
-        margin: $navbar-links-margin;
+.navbar>a {
+  padding: $navbar-links-padding;
+  margin: $navbar-links-margin;
 }

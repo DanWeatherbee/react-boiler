@@ -14,7 +14,7 @@ class NavLinks extends Component {
     renderLinks() {
         return this.props.links.map((link) => {
             return(
-                        <a style={style} href={link.page} key={link.page} onClick={() => this.props.navPageSelect(link)} className="btn btn-success">{link.name}</a>
+                        <a style={style} href={link.page} key={link.page} onClick={() => this.props.navPageSelect(link)} className="btn btn-primary">{link.name}</a>
                 );
         });
     }
