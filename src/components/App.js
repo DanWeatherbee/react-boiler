@@ -25,7 +25,7 @@ class App extends React.Component {
                   <br /><br /><br /><br />
                   <HeaderView />
 
-              <div className="container">
+              <div className="container animate">
                   <ContentView />
               </div>
           </div>

@@ -7,6 +7,7 @@ export const selectUser = (user) => {
 };
 export const navPageSelect = (linkSelected) => {
     console.log("You clicked on page: ", linkSelected.page, linkSelected.name);
+    $(linkSelected.page).fadeIn();
     return {
         type: 'LINK_SELECTED',
         payload: linkSelected
