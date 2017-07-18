@@ -5,8 +5,14 @@ import {navPageSelect} from '../actions/index'
 /*
  * We need "if(!this.props.links)" because we set state to null by default
  * */
-const style = {
+const linkStyle = {
     textTransform: "uppercase"
+}
+
+const navStyle = {
+    position: "fixed",
+    zIndex: 1,
+    width: "100%"
 }
 
 class NavLinks extends Component {
@@ -14,7 +20,7 @@ class NavLinks extends Component {
     renderLinks() {
         return this.props.links.map((link) => {
             return(
-                        <a style={style} href={link.page} key={link.page} onClick={() => this.props.navPageSelect(link)} className="btn btn-primary">{link.name}</a>
+                        <li key={link.page}><a style={linkStyle} href={link.page} onClick={() => this.props.navPageSelect(link)}>{link.name}</a></li>
                 );
         });
     }
@@ -23,9 +29,20 @@ class NavLinks extends Component {
             return (<div>no navLinks</div>);
         }
             return(
-                    <div className="navbar">{this.renderLinks()}</div>
+
+                    <nav className="navbar navbar-default" style={navStyle}>
+                      <div className="container-fluid">
+                        <div className="navbar-header">
+                          <a className="navbar-brand" href="#">Dan Weatherbee FENDeveloper</a>
+                        </div>
+                        <ul className="nav navbar-nav">
+                            {this.renderLinks()}
+                        </ul>
+                      </div>
+                    </nav>
+
                 );
-    }
+        }
 }
 
 // "state.navLinks" is set in reducers/index.js

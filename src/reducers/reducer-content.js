@@ -7,39 +7,39 @@ export default function () {
     return [
         {
             con: 1,
-            text: "Our expertise is in high quality, removable dental prosthesis for all ages. Our aim is to restore your healthy smile in a calm, relaxed atmosphere where your needs and well-being are our highest priority."
+            text: "text for nav1"
         },
         {
             con: 2,
-            text: "Nunc in consequat nulla, eu interdum mauris. Mauris suscipit nisi et imperdiet viverra. Sed arcu sem, dictum sit amet felis vitae, consectetur sollicitudin nisl. Integer enim tortor, elementum ut diam."
+            text: "text for nav2"
         },
         {
             con: 3,
-            text: "text for dentures"
+            text: "text for nav3"
         },
         {
             con: 4,
-            text: "text for about"
+            text: "text for nav3"
         },
         {
             con: 5,
-            text: "text for photos"
+            text: "text for nav5"
         },
         {
             con: 6,
-            text: "text for testimonials"
+            text: "text for nav6"
         },
         {
             con: 7,
-            text: "text for news"
+            text: "text for nav7"
         },
         {
             con: 8,
-            text: "text for apointment"
+            text: "text for nav8"
         },
         {
             con: 9,
-            text: "text for clinic"
+            text: "text for nav9"
         }
     ]
 }

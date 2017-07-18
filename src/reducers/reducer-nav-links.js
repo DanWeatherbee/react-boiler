@@ -11,35 +11,35 @@ export default function () {
         },
         {
             page: "#2",
-            name: "services"
-        },
-        {
-            page:  "#3",
-            name: "dentures"
-        },
-        {
-            page:  "#4",
             name: "about"
         },
         {
+            page:  "#3",
+            name: "contact"
+        },
+        {
+            page:  "#4",
+            name: "projects"
+        },
+        {
             page:  "#5",
-            name: "photos"
+            name: "library's"
         },
         {
             page:  "#6",
-            name: "testimonials"
+            name: "processors"
         },
         {
             page:  "#7",
-            name: "news"
+            name: "languages"
         },
         {
             page:  "#8",
-            name: "apointment"
+            name: "frameworks"
         },
         {
             page:  "#9",
-            name: "clinic"
+            name: "ecosystem"
         }
     ]
 }
