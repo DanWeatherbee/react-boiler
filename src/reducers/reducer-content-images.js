@@ -11,7 +11,10 @@ import BGImg6 from '../images/bg-6.jpg';
 import BGImg7 from '../images/bg-7.jpg';
 import BGImg8 from '../images/bg-8.jpg';
 import BGImg9 from '../images/bg-9.jpg';
-
+import BGImg10 from '../images/bg-10.jpg';
+import BGImgMe from '../images/me.jpg';
+import BGImgLoading from '../images/loading.gif';
+import BGImgFlex from '../images/flex.gif';
 export default function () {
     return [
         {
@@ -57,6 +60,26 @@ export default function () {
         {
             image: 9,
             src: BGImg9,
+            alt: ""
+        },
+        {
+            image: 10,
+            src: BGImg10,
+            alt: ""
+        },
+        {
+            image: 11,
+            src: BGImgMe,
+            alt: ""
+        },
+        {
+            image: 12,
+            src: BGImgLoading,
+            alt: ""
+        },
+        {
+            image: 13,
+            src: BGImgFlex,
             alt: ""
         }
     ]

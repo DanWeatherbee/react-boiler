@@ -11,7 +11,7 @@ export default function () {
         },
         {
             con: 2,
-            text: "text for nav2"
+            text: "Developer Dan Weatherbee"
         },
         {
             con: 3,
@@ -19,7 +19,7 @@ export default function () {
         },
         {
             con: 4,
-            text: "text for nav3"
+            text: "text for nav4"
         },
         {
             con: 5,

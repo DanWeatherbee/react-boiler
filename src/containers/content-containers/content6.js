@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
  * We need "if(!this.props.links)" because we set state to null by default
  * */
 
-class Content extends Component {
+class Content6 extends Component {
 
     render() {
             if (!this.props.content) {
@@ -12,9 +12,9 @@ class Content extends Component {
         }
             return(
             <div>
-                <div>{this.props.content[0].con}</div>
+                <div>{this.props.content[6].con}</div>
                 <br />
-                <div>{this.props.content[0].text}</div>
+                <div>{this.props.content[6].text}</div>
                 </div>
                 );
     }
@@ -27,4 +27,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(Content);
+export default connect(mapStateToProps)(Content6);

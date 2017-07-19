@@ -3,11 +3,16 @@ import { bground } from '../reducers/reducer-content-images';
 import {connect} from 'react-redux';
 
 const imgStyle = {
-    width: "100%",
+    maxWidth: "20%",
     maxHeight: "700px",
-    opacity: ".5"
+    opacity: ".7",
+    margin: "2%"
 }
-
+const imgStyle2 = {
+    maxWidth: "50%",
+    maxHeight: "700px",
+    opacity: ".7"
+}
 const hStyle = {
         color: "#00a1ff"
 }
@@ -17,7 +22,7 @@ class HeaderView extends React.Component {
     render () {
         return (
                 <div className="container">
-                        <div className="row">
+                        <div className="row text-center">
                                 <div className="col-md-2 animate">
                                         <h3 style={hStyle}>React Redux Sass</h3>
                                 </div>
@@ -27,7 +32,10 @@ class HeaderView extends React.Component {
                                 <div className="col-md-2 animate">
                                         <h3 style={hStyle}>Weback Build System</h3>
                                 </div>
-                                <img style={imgStyle} src={this.props.bground[0].src} />
+                                <img className="ipad" style={imgStyle} src={this.props.bground[0].src} />
+                                <img className="ipad" style={imgStyle2} src={this.props.bground[0].src} />
+                                <img className="ipad" style={imgStyle} src={this.props.bground[0].src} />
+                                <br />
                         </div>
                 </div>
                 );
