@@ -8,16 +8,17 @@ import Content5 from '../containers/content-containers/content5';
 import Content6 from '../containers/content-containers/content6';
 import Content7 from '../containers/content-containers/content7';
 import Content8 from '../containers/content-containers/content8';
-
+import Parallax from '../containers/parallax';
 const h3Style = {
-    color: "skyblue",
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    textShadow: "0 0 0"
 }
 class ContentView extends React.Component {
 
     render () {
       return (
-        <div>
+        <div className="parallax">
+                <Parallax />
                 <section className="content-view" id="1">
                         <h3 style={h3Style}>Home</h3>
                         <Content0 />

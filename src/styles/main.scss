@@ -1,7 +1,10 @@
 @import 'base';
 @import '_container-view';
+@import '_parallax';
 @import '../stylesheets/_bootstrap';
 // App Variables
+
+
 $home-page-body-img: url('../images/bg-2.jpg') no-repeat fixed center;
 
 body {

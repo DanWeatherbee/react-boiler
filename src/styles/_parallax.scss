@@ -1,0 +1,25 @@
+.parallax {
+    /* The image used */
+    background-image: url("../images/flex.gif");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-shadow: 1px 3px 5px  black;
+    color: white;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("../images/spiral.gif");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-shadow: 1px 3px 15px  black;
+    color: white;
+}

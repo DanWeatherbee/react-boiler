@@ -6,6 +6,7 @@ $content-view-padding: 20%;
 $content-view-font-size: 1.5em;
 $content-view-opacity: .8;
 $content-hidden: none;
+$content-text-shadow: 0 0 10px black;
 
 // View Container
 .content-view {
@@ -15,5 +16,6 @@ $content-hidden: none;
   font-size: $content-view-font-size;
   opacity: $content-view-opacity;
   display: $content-hidden;
+  text-shadow: $content-text-shadow;
 }
 

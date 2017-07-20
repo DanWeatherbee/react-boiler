@@ -21,15 +21,15 @@ class HeaderView extends React.Component {
 
     render () {
         return (
-                <div className="container">
+                <div className="container parallax">
                         <div className="row text-center">
-                                <div className="col-md-2 animate">
+                                <div className="col-md-2">
                                         <h3 style={hStyle}>React Redux Sass</h3>
                                 </div>
                                 <div className="col-md-8 text-center">
                                         <h1 style={hStyle}>Modern Single Page Web Developement</h1>
                                 </div>
-                                <div className="col-md-2 animate">
+                                <div className="col-md-2">
                                         <h3 style={hStyle}>Weback Build System</h3>
                                 </div>
                                 <img className="ipad" style={imgStyle} src={this.props.bground[0].src} />

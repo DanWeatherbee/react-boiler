@@ -9,6 +9,7 @@ const imgStyle = {
     maxHeight: "700px",
     margin: "2%"
 }
+
 class Content1 extends Component {
 
     render() {
@@ -16,15 +17,18 @@ class Content1 extends Component {
             return (<div>no content</div>);
         }
             return(
-                <div>
+                <div className="parallax2">
                     <img className="picture-frame" style={imgStyle} src={this.props.bground[10].src} />
-                    <div>{this.props.content[1].text}</div>
+                    <div className="text-right">
+                    <h1>Front End Ninja</h1>
+                    {this.props.content[1].text}
+                    </div>
                 </div>
                 );
     }
 }
 
-// "state.content1" is set in reducers/index.js
+// "state.content" is set in reducers/index.js
 function mapStateToProps(state) {
     return {
         content: state.content,
