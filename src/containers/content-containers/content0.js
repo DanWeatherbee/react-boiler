@@ -13,8 +13,6 @@ class Content0 extends Component {
         }
             return(
             <div>
-                <div>{this.props.content[0].con}</div>
-                <br />
                 <div>{this.props.content[0].text}</div>
                 </div>
                 );

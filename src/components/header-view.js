@@ -32,9 +32,9 @@ class HeaderView extends React.Component {
                                 <div className="col-md-2">
                                         <h3 style={hStyle}>Weback Build System</h3>
                                 </div>
-                                <img className="ipad" style={imgStyle} src={this.props.bground[0].src} />
+                                <img className="ipad" style={imgStyle} src={this.props.bground[13].src} />
                                 <img className="ipad" style={imgStyle2} src={this.props.bground[0].src} />
-                                <img className="ipad" style={imgStyle} src={this.props.bground[0].src} />
+                                <img className="ipad" style={imgStyle} src={this.props.bground[7].src} />
                                 <br />
                         </div>
                 </div>

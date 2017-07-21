@@ -7,7 +7,7 @@ export default function () {
     return [
         {
             con: 1,
-            text: "text for nav1"
+            text: "This is the starting point of my new cutting edge React-Redux-Sass Developers Environment complete with compilers, automated asset optimization and deployment. I have integrated several other library's as well, including Bootstrap and jQuery. So far I am just barely getting started. MongoDB will be added in as the back-end."
         },
         {
             con: 2,
