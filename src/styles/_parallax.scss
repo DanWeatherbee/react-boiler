@@ -23,3 +23,16 @@
     text-shadow: 1px 3px 15px  black;
     color: white;
 }
+
+.parallax3 {
+    /* The image used */
+    background-image: url("../images/bg-10.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-shadow: 1px 3px 15px  black;
+    color: white;
+}

@@ -16,7 +16,7 @@ import BGImgMe from '../images/me.jpg';
 import BGImgLoading from '../images/loading.gif';
 import BGImgFlex from '../images/flex.gif';
 import BGWithMe from '../images/wythme.jpg';
-
+import BGCool from '../images/cool.gif';
 export default function () {
     return [
         {
@@ -87,6 +87,11 @@ export default function () {
         {
             image: 14,
             src: BGWithMe,
+            alt: ""
+        },
+        {
+            image: 15,
+            src: BGCool,
             alt: ""
         }
     ]

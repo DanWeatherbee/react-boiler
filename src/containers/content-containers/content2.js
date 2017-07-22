@@ -11,7 +11,7 @@ class Content2 extends Component {
             return (<div>no content</div>);
         }
             return(
-            <div>
+            <div className="parallax3">
                 <div>{this.props.content[2].con}</div>
                 <br />
                 <div>{this.props.content[2].text}</div>
