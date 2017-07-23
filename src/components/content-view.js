@@ -17,7 +17,7 @@ class ContentView extends React.Component {
 
     render () {
       return (
-        <div className="parallax">
+        <div>
                 <Parallax />
                 <section className="content-view animated slideInLeft slideInRight" id="1">
                         <h3 style={h3Style}>Home</h3>

@@ -4,7 +4,7 @@
  * */
 import BGImg1 from '../images/bg-1.jpg';
 import BGImg2 from '../images/bg-2.jpg';
-import BGImg3 from '../images/bg-3.jpg';
+import BGImg3 from '../images/bg-3.gif';
 import BGImg4 from '../images/bg-4.jpg';
 import BGImg5 from '../images/bg-5.jpg';
 import BGImg6 from '../images/bg-6.jpg';

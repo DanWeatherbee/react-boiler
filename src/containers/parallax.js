@@ -13,7 +13,8 @@ const divStyle = {
     marginTop: "20%",
     paddingBottom: "20%",
     fontFamily: "roboto",
-    letterSpacing: ".5em"
+    letterSpacing: ".5em",
+    background: "midnightblue"
 }
 
 class Parallax extends Component {
@@ -23,7 +24,7 @@ class Parallax extends Component {
             return (<div>no content</div>);
         }
             return(
-                <div style={divStyle} className="parallax text-center">
+                <div style={divStyle} className="text-center">
                     <h1 style={style}>Website Features</h1>
                     <br />
                     <h3 style={style}>Scalable Application &#9989;</h3>

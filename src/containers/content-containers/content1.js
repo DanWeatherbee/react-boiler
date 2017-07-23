@@ -17,7 +17,7 @@ class Content1 extends Component {
             return (<div>no content</div>);
         }
             return(
-                <div className="parallax2">
+                <div className="parallax">
                     <img className="picture-frame" style={imgStyle} src={this.props.bground[10].src} />
                     <div className="text-right">
                     <h1>Front End Ninja</h1>

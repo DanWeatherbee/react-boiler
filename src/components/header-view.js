@@ -5,13 +5,11 @@ import {connect} from 'react-redux';
 const imgStyle = {
     maxWidth: "20%",
     maxHeight: "700px",
-    opacity: ".7",
     margin: "2%"
 }
 const imgStyle2 = {
     maxWidth: "50%",
-    maxHeight: "700px",
-    opacity: ".7"
+    maxHeight: "700px"
 }
 const hStyle = {
         color: "#00a1ff"
@@ -21,7 +19,7 @@ class HeaderView extends React.Component {
 
     render () {
         return (
-                <div className="container parallax">
+                <div className="container">
                         <div className="row text-center">
                                 <div className="col-md-2">
                                         <h3 style={hStyle}>React Redux Sass</h3>
