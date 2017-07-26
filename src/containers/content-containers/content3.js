@@ -11,9 +11,7 @@ class Content3 extends Component {
             return (<div>no content</div>);
         }
             return(
-            <div>
-                <div>{this.props.content[3].con}</div>
-                <br />
+                <div>
                 <div>{this.props.content[3].text}</div>
                 </div>
                 );

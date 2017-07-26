@@ -11,9 +11,7 @@ class Content4 extends Component {
             return (<div>no content</div>);
         }
             return(
-            <div>
-                <div>{this.props.content[4].con}</div>
-                <br />
+                <div>
                 <div>{this.props.content[4].text}</div>
                 </div>
                 );

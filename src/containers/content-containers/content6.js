@@ -11,9 +11,7 @@ class Content6 extends Component {
             return (<div>no content</div>);
         }
             return(
-            <div>
-                <div>{this.props.content[6].con}</div>
-                <br />
+                <div>
                 <div>{this.props.content[6].text}</div>
                 </div>
                 );

@@ -17,7 +17,7 @@ class Content0 extends Component {
 
                 <br />
 
-                <img src={this.props.bground[2].src} />
+                <img className="img-responsive" src={this.props.bground[2].src} />
                 <br />
                 <br />
                 <div>{this.props.content[0].text3}</div>

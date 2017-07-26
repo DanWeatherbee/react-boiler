@@ -27,10 +27,16 @@ class Parallax extends Component {
                 <div style={divStyle} className="text-center">
                     <h1 style={style}>Website Features</h1>
                     <br />
+                    <br />
                     <h3 style={style}>Scalable Application &#9989;</h3>
+                    <br />
                     <h3 style={style}>Advanced Programming using the react-redux ecosystem. &#9989;</h3>
+                    <br />
                     <h3 style={style}>Built using Best Practices. &#9989;</h3>
+                    <br />
                     <h3 style={style}>Coded using Java Scripts's MVM Pattern. &#9989;</h3>
+                    <br />
+                    <h3 style={style}>MERN Stack with MongoDB. &#9989;</h3>
                 </div>
                 );
     }

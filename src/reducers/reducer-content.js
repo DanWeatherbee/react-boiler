@@ -17,7 +17,7 @@ export default function () {
         },
         {
             con: 3,
-            text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+            text: "Working on it :D."
         },
         {
             con: 4,
@@ -41,7 +41,8 @@ export default function () {
         },
         {
             con: 9,
-            text: "text for nav9"
+            text: "The Modern Application Stack - ReactJS, ES6 & JSX to Build a UI (the rise of MERN). In our toolbox will also be Babel, Webpack, and Mocha.",
+            text2: "Mongo is installed as the Back end and CRUD Operations are setup in db.js."
         }
     ]
 }

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+    import React, {Component} from 'react';
 import {connect} from 'react-redux';
 /*
  * We need "if(!this.props.links)" because we set state to null by default
