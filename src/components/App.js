@@ -2,7 +2,6 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import NavLinks from '../containers/site-navbar';
-import ContentView from '../components/content-view';
 import HeaderView from '../components/header-view';
 
 
@@ -22,15 +21,8 @@ class App extends React.Component {
   render () {
     return (
       <Provider store={this.props.store}>
-          <div>
+          <div className="content-view">
                   <NavLinks />
-
-                  <br /><br /><br /><br />
-                  <HeaderView />
-
-              <div className="container animate">
-                  <ContentView />
-              </div>
           </div>
       </Provider>
     )

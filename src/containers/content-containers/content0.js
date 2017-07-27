@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { bground } from '../../reducers/reducer-content-images';
+
 /*
  * We need "if(!this.props.links)" because we set state to null by default
  * */
@@ -14,20 +15,13 @@ class Content0 extends Component {
             return(
             <div>
                 <div>{this.props.content[0].text}</div>
-
                 <br />
-
                 <img className="img-responsive" src={this.props.bground[2].src} />
                 <br />
                 <br />
                 <div>{this.props.content[0].text3}</div>
                 <br />
                 <div>{this.props.content[0].text2}</div>
-
-
-
-
-
         </div>
                 );
     }

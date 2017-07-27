@@ -1,21 +1,13 @@
 
 // View Container Variables
-$content-view-background-color: black;
-$content-view-text-color: white;
-$content-view-padding: 20%;
+
+$content-view-text-color: black;
 $content-view-font-size: 1.5em;
-$content-view-opacity: .8;
-$content-hidden: none;
-$content-text-shadow: 0 0 10px black;
+
 
 // View Container
 .content-view {
-  background: $content-view-background-color;
   color: $content-view-text-color;
-  padding: $content-view-padding;
   font-size: $content-view-font-size;
-  opacity: $content-view-opacity;
-  display: $content-hidden;
-  text-shadow: $content-text-shadow;
 }
 
