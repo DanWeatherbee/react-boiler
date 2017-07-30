@@ -35,6 +35,8 @@ class Parallax extends Component {
                     <h3 style={style}>Coded using Java Scripts's MVM Pattern. &#9989;</h3>
                     <br />
                     <h3 style={style}>MERN Stack with MongoDB. &#9989;</h3>
+                    <br />
+                    <h3 style={style}>Last Fm API. &#9989;</h3>
                 </div>
                 );
     }

@@ -25,27 +25,28 @@ http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=16cd9cf83f2
 
 // The address of where to retrieve data
 const URL = 'http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=16cd9cf83f2037a4941ca1c74686a557&format=json';
-const artists = [];
 
 
-
+// Creates an array from the api.
 export default function () {
-        $.ajax({
+  let collection = [];
+   $.ajax({
               url: URL,
               success: function(data) {
+                for (var i = 0;data.artists.artist.length > i;i++) {
+              collection.push(data.artists.artist[i].image[4]['#text']);
+                }
 
-              artists.push(data.artists.artist);
-              console.log(artists);
+              console.log(data.artists.artist);
 
               },
               error: function(data) {
 
                   console.log('ERROR');
-                  data = {}
-
+      // TODO add error handler for user in case of api failure.
               }
           });
-        return artists;
+  return collection;
 }
 
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { bground } from '../../reducers/reducer-content-images';
-import { music } from '../../reducers/reducer-api';
+
 
 /*
  * We need "if(!this.props.links)" because we set state to null by default
@@ -23,7 +23,7 @@ class Content0 extends Component {
                 <div>{this.props.content[0].text3}</div>
                 <br />
                 <div>{this.props.content[0].text2}</div>
-                 <div>{this.props.music[0]}</div>
+
         </div>
                 );
     }
@@ -33,8 +33,7 @@ class Content0 extends Component {
 function mapStateToProps(state) {
     return {
         content: state.content,
-        bground: state.bground,
-        music: state.music
+        bground: state.bground
     };
 }
 

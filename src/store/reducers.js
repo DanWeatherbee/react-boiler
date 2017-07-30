@@ -3,13 +3,13 @@ import { combineReducers } from 'redux';
 import NavLinks from '../reducers/reducer-nav-links';
 import Content from '../reducers/reducer-content';
 import ContentBackGround from '../reducers/reducer-content-images';
-import ApiLastFm from '../reducers/reducer-api';
+import LastFm from '../reducers/reducer-api';
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
     navLinks: NavLinks,
     content: Content,
     bground: ContentBackGround,
-    music: ApiLastFm
+    music: LastFm
   })
 }
 

@@ -10,6 +10,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import LastFm from '../containers/lastfm';
 import Content0 from '../containers/content-containers/content0';
 import Content1 from '../containers/content-containers/content1';
 import Content2 from '../containers/content-containers/content2';
@@ -37,7 +38,7 @@ class NavLinks extends Component {
             return(
 <div>
         <Router>
-            <nav className="navbar navbar-fixed-top">
+            <nav className="navbar navbar-default">
                   <div className="container-fluid">
                         <div className="navbar-header">
                               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -54,14 +55,16 @@ class NavLinks extends Component {
                                 <li style={linkStyle}><Link to="/">Home</Link></li>
                                 <li style={linkStyle}><Link to="/about">About</Link></li>
                                 <li style={linkStyle}><Link to="/features">Features</Link></li>
-                                <li style={linkStyle}><Link to="/new">New</Link></li>
+                                <li style={linkStyle}><Link to="/stack">Stack</Link></li>
+                                <li style={linkStyle}><Link to="/api">Music Api</Link></li>
                             </ul>
                       </div>
                             <br /><br />
                           <div className="container animated flipInX"><Route exact path="/" component={HeaderView}/></div>
                           <div className="container animated flipInX"><Route path="/about" component={Content0}/></div>
                           <div className="container animated flipInX"><Route path="/features" component={Parallax}/></div>
-                          <div className="container animated flipInX"><Route path="/new" component={Content8}/></div>
+                          <div className="container animated flipInX"><Route path="/stack" component={Content8}/></div>
+                          <div className="container animated flipInX"><Route path="/api" component={LastFm}/></div>
                   </div>
             </nav>
       </Router>

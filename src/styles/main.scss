@@ -5,7 +5,14 @@
 @import 'animate.min.css';
 // App Variables
 
+#myNavbar {
+  position: fixed;
+  left: 33%;
+  z-index: 1;
+  background-color: white;
+  opacity: .9;
 
+}
 .ipad {
   border-style: solid;
   border-width: 130px 55px 130px;
