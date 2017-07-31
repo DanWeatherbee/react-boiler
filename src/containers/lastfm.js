@@ -1,30 +1,27 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {music} from '../reducers/reducer-api';
-const style = {
-    padding: "1%"
-}
+
 class LastFm extends Component {
 
     render() {
 
 return (
     <div className="container">
+    <div>
         <h1>Top 50 Artists</h1>
-                <div>
                 {this.props.music.map((item, index) => (
-                   <img className="img-responsive" key={index} style={style} src={item} />
+                   <figure key={index + "figure"}>
+                   <figcaption key={index + "caption"}>{item[1].name}</figcaption>
+                   <img className="img-responsive" key={index + "image"} src={item[0].url} />
+                   <hr key={index + "hr"}/>
+                   </figure>
                 ))}
-            </div>
+                </div>
    </div>
 );
     }
 }
-
-
-
-
-
 
 // "state" is set in reducers/index.js
 function mapStateToProps(state) {

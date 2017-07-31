@@ -34,10 +34,10 @@ export default function () {
               url: URL,
               success: function(data) {
                 for (var i = 0;data.artists.artist.length > i;i++) {
-              collection.push(data.artists.artist[i].image[4]['#text']);
+              collection.push([{url: data.artists.artist[i].image[4]['#text']}, {name: data.artists.artist[i].name}]);
                 }
 
-              console.log(data.artists.artist);
+              console.log(collection);
 
               },
               error: function(data) {
