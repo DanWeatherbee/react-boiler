@@ -34,7 +34,7 @@ export default function () {
               url: URL,
               success: function(data) {
                 for (var i = 0;data.artists.artist.length > i;i++) {
-              collection.push([{url: data.artists.artist[i].image[4]['#text']}, {name: data.artists.artist[i].name}]);
+              collection.push([{url: data.artists.artist[i].image[4]['#text']}, {name: data.artists.artist[i].name}, {playcount: data.artists.artist[i].playcount}, {listeners: data.artists.artist[i].listeners}, {small: data.artists.artist[i].image[1]['#text']}]);
                 }
 
               console.log(collection);
