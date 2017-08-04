@@ -9,7 +9,7 @@ export const makeRootReducer = (asyncReducers) => {
     navLinks: NavLinks,
     content: Content,
     bground: ContentBackGround,
-    music: LastFm
+    api: LastFm
   })
 }
 
