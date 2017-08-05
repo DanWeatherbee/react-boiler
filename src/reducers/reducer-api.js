@@ -27,6 +27,7 @@ http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=16cd9cf83f2
 const URL = 'http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=16cd9cf83f2037a4941ca1c74686a557&format=json';
 let artistName = "";
 let collection = [];
+let videos = [];
 let videoSrc = "";
 let init;
 let getVidId;
@@ -42,9 +43,12 @@ export default function () {
 
                   for (var i = 0;data.artists.artist.length > i;i++) {
                 collection.push([{url: data.artists.artist[i].image[4]['#text']}, {name: data.artists.artist[i].name}, {playcount: data.artists.artist[i].playcount}, {listeners: data.artists.artist[i].listeners}, {small: data.artists.artist[i].image[1]['#text']}]);
+
+                  artistName = collection[i][1].name;
+
+                  getVidId(artistName);
                   }
-                  artistName = collection[0][1].name;
-                  console.log(artistName);
+
                 },
                 error: function(data) {
 
@@ -64,9 +68,11 @@ export default function () {
                       success: function(data) {
 
                        videoSrc = "https://www.youtube.com/embed/" + data.items[1].id['videoId'];
-                       collection.push({video: videoSrc})
-                       console.log(videoSrc);
-                       return videoSrc;
+                       videos.push({video: videoSrc});
+
+                       collection.push(videos);
+
+                       return videos[0].video;
                       },
                       error: function(data) {
 
@@ -74,11 +80,10 @@ export default function () {
               // TODO add error handler for user in case of api failure.
                       }
                   });
+
        }
 
     init();
-    getVidId("Coldplay");
-
     console.log(collection)
   return collection;
 }
