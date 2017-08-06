@@ -1,7 +1,7 @@
 import React from 'react';
 import { bground } from '../reducers/reducer-content-images';
 import {connect} from 'react-redux';
-
+import { api } from '../reducers/reducer-api';
 const imgStyle = {
     maxWidth: "20%",
     maxHeight: "700px",
@@ -44,7 +44,8 @@ class HeaderView extends React.Component {
 // "state.bground" is set in store/reducers.js
 function mapStateToProps(state) {
     return {
-        bground: state.bground
+        bground: state.bground,
+        api: state.api
     };
 }
 

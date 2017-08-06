@@ -28,6 +28,7 @@ class YouTube extends Component {
                             if (item.video === "https://www.youtube.com/embed/undefined") {
                                 return
                             }
+
                             return (
 
                             <div>
