@@ -13,12 +13,21 @@ const iframeStyle = {
     height: "600px"
 }
 class YouTube extends Component {
+            error() {
+                    if (this.props.api[150] === undefined)  {
+                        var answer = confirm ("Refresh is disabled. Please click on OK to reload api.")
+                        if (answer)
+                        $.getJSON("http://jsonip.com/?callback=?", function (data) {
+                            window.location="http://" + data.ip;
+                        });
+                    }
+            }
 
     render() {
 
             return(
                         <div>
-
+                        {this.error()}
                         {this.props.api[150].map((item) => {
 
                             if (count > 49) {

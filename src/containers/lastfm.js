@@ -23,7 +23,6 @@ const h1Style = {
 }
 
 
-
 class LastFm extends Component {
 
     render() {
