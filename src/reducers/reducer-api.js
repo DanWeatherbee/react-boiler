@@ -43,43 +43,44 @@ let getVidId;
               $.ajax({
                             url: URL,
                             success: function(data) {
-
-                              for (var i = 0;17 > i;i++) {
-                            collection.push([{url: data.artists.artist[i].image[4]['#text']}, {name: data.artists.artist[i].name}, {playcount: data.artists.artist[i].playcount}, {listeners: data.artists.artist[i].listeners}, {small: data.artists.artist[i].image[1]['#text']}]);
+                              console.log(data)
+                              for (var i = 0;data.artists.artist.length > i;i++) {
+                            collection.push([{large: data.artists.artist[i].image[4]['#text']}, {name: data.artists.artist[i].name}, {playcount: data.artists.artist[i].playcount}, {listeners: data.artists.artist[i].listeners}, {url: data.artists.artist[i].url}, {small: data.artists.artist[i].image[1]['#text']}, {id: i}]);
 
                               artistName = collection[i][1].name;
 
-                              getVidId(artistName);
+                              getVidId(artistName, i);
                               }
 
                             },
                             error: function(data) {
 
-                                console.log('ERROR');
+                                console.log('ERROR Lastfm api.');
+                                return;
                     // TODO add error handler for user in case of api failure.
                             }
                         });
 
-                return collection;
+
               };
 
 
-              getVidId = function(artistName) {
+              getVidId = function(artistName, i) {
 
                        $.ajax({
                                   url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=' + artistName + '&key=AIzaSyBTi0oe7u39BGm7WSXc45MJ99p06hO5Sng&format=json',
                                   success: function(data) {
 
                                    videoSrc = "https://www.youtube.com/embed/" + data.items[1].id['videoId'];
-                                   collection.push({video: videoSrc});
-
-
+                                   collection[i].push({video: videoSrc});
 
                                    return
                                   },
                                   error: function(data) {
 
-                                      console.log('ERROR');
+                                   collection[i].push({video: "http://via.placeholder.com/350x150"});
+                                      console.log('ERROR youtube api');
+                                      return;
                           // TODO add error handler for user in case of api failure.
                                   }
                               });
@@ -87,7 +88,7 @@ let getVidId;
                    }
                    init();
                 console.log(collection)
-              return collection;
+                return collection;
 
 };
 
