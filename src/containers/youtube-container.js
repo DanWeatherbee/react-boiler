@@ -14,12 +14,13 @@ const iframeStyle = {
 }
 class YouTube extends Component {
             error() {
-                    if (this.props.api[150] === undefined)  {
-                        var answer = confirm ("Refresh is disabled. Please click on OK to reload api.")
+                    if (this.props.api === undefined)  {
+                        var answer = confirm ("Refresh is disabled. Try my node server and click on OK to reload api.")
                         if (answer)
-                        $.getJSON("http://jsonip.com/?callback=?", function (data) {
-                            window.location="http://" + data.ip;
-                        });
+                        // $.getJSON("http://jsonip.com/?callback=?", function (data) {
+                        //     window.location="http://" + data.ip + ":3000";
+                        // });
+                        window.location="http://24.70.32.105:3000";
                     }
             }
 
@@ -28,12 +29,14 @@ class YouTube extends Component {
             return(
                         <div>
                         {this.error()}
-                        {this.props.api[150].map((item) => {
+                        {this.props.api.map((item) => {
 
-                            if (count > 49) {
+                            if (count > 30) {
                                 return
                             }
                             count++
+
+
                             if (item.video === "https://www.youtube.com/embed/undefined") {
                                 return
                             }

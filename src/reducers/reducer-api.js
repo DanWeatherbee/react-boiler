@@ -44,7 +44,7 @@ let getVidId;
                             url: URL,
                             success: function(data) {
 
-                              for (var i = 0;data.artists.artist.length > i;i++) {
+                              for (var i = 0;17 > i;i++) {
                             collection.push([{url: data.artists.artist[i].image[4]['#text']}, {name: data.artists.artist[i].name}, {playcount: data.artists.artist[i].playcount}, {listeners: data.artists.artist[i].listeners}, {small: data.artists.artist[i].image[1]['#text']}]);
 
                               artistName = collection[i][1].name;
@@ -71,11 +71,11 @@ let getVidId;
                                   success: function(data) {
 
                                    videoSrc = "https://www.youtube.com/embed/" + data.items[1].id['videoId'];
-                                   videos.push({video: videoSrc});
+                                   collection.push({video: videoSrc});
 
-                                   collection.push(videos);
 
-                                   return videos[0].video;
+
+                                   return
                                   },
                                   error: function(data) {
 
