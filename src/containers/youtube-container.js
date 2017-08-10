@@ -6,17 +6,20 @@ import { bground } from '../reducers/reducer-content-images';
 const style = {
     color: "lightgrey",
     backgroundColor: "black",
-    marginTop: "1%"
+    padding: "1%"
 }
 let count = 0;
 const iframeStyle = {
-    width: "100%",
-    height: "100%"
+    width: "80%",
+    height: "600px"
+}
+
+const imgStyle = {
+    maxHeight: "500px"
 }
 
 const shadow = {
-    boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
-    padding: "2%"
+    textShadow: "1px 1px 1px  black"
 }
 
 class YouTube extends Component {
@@ -34,9 +37,9 @@ class YouTube extends Component {
     render() {
 
             return(
-                        <div>
+                        <div className="container-fluid center-block" style={shadow}>
                             <h1>Top 50 Artisists Last FM API</h1>
-                            <ol style={style}>
+
                                 {this.error()}
                                 {this.props.api.map((item) => {
 
@@ -48,23 +51,31 @@ class YouTube extends Component {
 
                                     return (
 
-                                        <li key={item[6].id}  style={shadow}>
-                                        <hr />
-                                        <h4>{item[1].name}</h4>
-                                        <span><img className="img-responsive"src={item[5].small} />{" Playcount: " +
-                                         item[2].playcount + " Listeners: "}{item[3].listeners}</span>
-                                        <img className="img-responsive" src={item[0].large} />
-                                        <br />
-                                        <label>{item[1].name + " Video - YouTube API"}</label>
-                                        <iframe style={iframeStyle} src={item[7].video}></iframe>
-                                        <br />
-                                        <label>{item[1].name + " -  Last Fm Page "}</label>
-                                        <a href={item[4].url}>&nbsp;&nbsp;{item[4].url}</a>
-                                        </li>
+                                        <article key={item[6].id}  style={style}>
+
+                                                        <hr />
+                                                        <h2>{item[1].name}</h2>
+                                                        <div className="text-center">
+                                                                <img className="img-responsive img-circle center-block"src={item[5].small} />
+                                                                <br />
+                                                                {" Playcount: " + item[2].playcount + " Listeners: "}{item[3].listeners}
+                                                         </div>
+                                                         <br />
+                                                        <img style={imgStyle} className="img-responsive center-block picture-frame" src={item[0].large} />
+                                                        <br />
+                                                        <h4>{item[1].name + " Video - YouTube API"}</h4>
+                                                        <iframe className="ipad2" style={iframeStyle} src={item[7].video}></iframe>
+                                                        <br />
+                                                        <label>{item[1].name + " -  Last Fm Page "}</label>
+                                                        <a href={item[4].url}>
+                                                        <br />
+                                                        {item[4].url}</a>
+
+                                        </article>
                                     )
 
                                 })}
-                            </ol>
+
                         </div>
 
                 );

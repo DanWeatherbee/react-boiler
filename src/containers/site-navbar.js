@@ -10,7 +10,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import LastFm from '../containers/lastfm';
+
 import Content0 from '../containers/content-containers/content0';
 import Content1 from '../containers/content-containers/content1';
 import Content2 from '../containers/content-containers/content2';
@@ -25,9 +25,6 @@ import Parallax from '../containers/parallax';
 import '../javascripts/lib/jquery-2.2.3.min.js';
 import '../javascripts/bootstrap/collapse.js';
 
-/*
- * We need "if(!this.props.links)" because we set state to null by default
- * */
 const linkStyle = {
     textTransform: "uppercase"
 }
@@ -38,63 +35,42 @@ class NavLinks extends Component {
             return(
 <div>
         <Router>
-            <nav className="navbar navbar-default">
-                  <div className="container-fluid">
-                        <div className="navbar-header">
-                              <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                              </button>
-                              <div className="navbar-brand">
-                                Dan Weatherbee
-                               </div>
+              <div>
+                  <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse navbar-fixed-top">
+                        <div className="container-fluid">
+                              <div className="navbar-header">
+                                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                      <span className="icon-bar"></span>
+                                      <span className="icon-bar"></span>
+                                      <span className="icon-bar"></span>
+                                    </button>
+                                    <div className="navbar-brand">
+                                      Dan Weatherbee
+                                     </div>
+                              </div>
+                              <div className="collapse navbar-collapse" id="myNavbar">
+                                  <ul className="nav navbar-nav">
+                                      <li style={linkStyle}><Link to="/">Home</Link></li>
+                                      <li style={linkStyle}><Link to="/about">About</Link></li>
+                                      <li style={linkStyle}><Link to="/features">Features</Link></li>
+                                      <li style={linkStyle}><Link to="/stack">Stack</Link></li>
+                                      <li style={linkStyle}><Link to="/api">Music Api</Link></li>
+                                  </ul>
+                            </div>
+                          </div>
+                  </nav>
+                            <div>
+                                <div className="container animated flipInX"><Route exact path="/" component={HeaderView}/></div>
+                                <div className="container animated flipInX"><Route path="/about" component={Content0}/></div>
+                                <div className="container animated flipInX"><Route path="/features" component={Parallax}/></div>
+                                <div className="container animated flipInX"><Route path="/stack" component={Content8}/></div>
+                                <div className="container animated flipInX text-center"><Route path="/api" component={YouTube}/></div>
                         </div>
-                        <div className="collapse navbar-collapse" id="myNavbar">
-                            <ul className="nav navbar-nav">
-                                <li style={linkStyle}><Link to="/">Home</Link></li>
-                                <li style={linkStyle}><Link to="/about">About</Link></li>
-                                <li style={linkStyle}><Link to="/features">Features</Link></li>
-                                <li style={linkStyle}><Link to="/stack">Stack</Link></li>
-                                <li style={linkStyle}><Link to="/api">Music Api</Link></li>
-                            </ul>
-                      </div>
-                            <br /><br />
-                          <div className="container animated flipInX"><Route exact path="/" component={HeaderView}/></div>
-                          <div className="container animated flipInX"><Route path="/about" component={Content0}/></div>
-                          <div className="container animated flipInX"><Route path="/features" component={Parallax}/></div>
-                          <div className="container animated flipInX"><Route path="/stack" component={Content8}/></div>
-                          <div className="container animated flipInX"><Route path="/api" component={YouTube}/></div>
-                  </div>
-            </nav>
+            </div>
       </Router>
   </div>
                 );
         }
 }
-// =============================== TODO call a onclick==>  window reload when navigating to home for api.
 
-
-
-
-
-
-
-
-/*
-// "state.navLinks" is set in reducers/index.js
-function mapStateToProps(state) {
-    return {
-        links: state.navLinks
-    };
-}
-
-export default connect(mapStateToProps, matchDispatchToProps)(NavLinks);
-// Get actions and pass them as props to to NavLinks
-//      > now NavLinks has this.props.navPageSelect
-function matchDispatchToProps(dispatch){
-    return bindActionCreators({navPageSelect: navPageSelect}, dispatch);
-}
-
-*/
 export default(NavLinks);
