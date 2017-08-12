@@ -1,12 +1,12 @@
 .parallax {
     /* The image used */
-    background-image: url("../images/bg-7.jpg");
+    background-image: url("../images/spiral.gif");
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
-    text-shadow: 1px 1px 1px  white;
+    text-shadow: 1px 3px 5px  black;
     color: white;
 }
