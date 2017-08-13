@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 import LastFm from '../containers/lastfm';
 import Content0 from '../containers/content-containers/content0';
 import Content1 from '../containers/content-containers/content1';
@@ -24,7 +24,6 @@ import HeaderView from '../components/header-view';
 import Parallax from '../containers/parallax';
 import '../javascripts/lib/jquery-2.2.3.min.js';
 import '../javascripts/bootstrap/collapse.js';
-
 /*
  * We need "if(!this.props.links)" because we set state to null by default
  * */
@@ -61,6 +60,7 @@ class NavLinks extends Component {
                                                 <li style={linkStyle}><Link to="/api">Music Api</Link></li>
                                             </ul>
                                           </div>
+
                                     </div>
                             </nav>
                             <br /><br /><br />
