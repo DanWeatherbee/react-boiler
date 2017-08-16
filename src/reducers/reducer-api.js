@@ -34,11 +34,12 @@ export default function() {
   getVidId = function(artistName, i) {
 
     $.ajax({
-      url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=' + artistName + '&key=AIzaSyBTi0oe7u39BGm7WSXc45MJ99p06hO5Sng&format=json',
+      url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=' + artistName +
+       '&key=AIzaSyBTi0oe7u39BGm7WSXc45MJ99p06hO5Sng&format=json',
       success: function(data) {
 
         if (data.items[1].id['videoId'] === undefined) {
-          videoSrc = "https://www.youtube.com/embed/PDANgtUFomE";
+          videoSrc = "https://www.youtube.com/embed/JJvdp0XpSj0";
           collection[i].push({ video: videoSrc });
           return
         }

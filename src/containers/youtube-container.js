@@ -5,18 +5,31 @@ import { bground } from '../reducers/reducer-content-images';
 
 const style = {
     color: "lightgrey",
-    backgroundColor: "black"
+    backgroundColor: "black",
+    position: "relative"
 }
 
 const imgStyle = {
     width: "80%"
 }
-let count = 0;
-const iframeStyle = {
-    width: "80%",
-    height: "600px"
+
+const spanStyleNotAv = {
+    color: "indianred",
+    fontSize: ".7em"
 }
 
+const linkStyle = {
+    paddingTop: "13.75%"
+}
+
+const iframeStyle = {
+    width: "100%",
+    height: 0,
+    paddingBottum: "56.25%",
+    position: "relative"
+}
+
+let count = 0;
 class YouTube extends Component {
             error() {
                     if (this.props.api === undefined)  {
@@ -47,21 +60,26 @@ class YouTube extends Component {
                                     return (
 
                                         <div key={item[6].id}>
-                                        <hr />
-                                        <h4>{item[1].name}</h4>
-                                        <span><img className="img-responsive img-circle center-block"src={item[5].small} />{" Playcount: " +
-                                         item[2].playcount + " Listeners: "}{item[3].listeners}</span>
-                                        <img style={imgStyle} className="img-responsive picture-frame center-block" src={item[0].large} />
-                                        <br />
-                                        <label>{item[1].name + " Video - YouTube API"}</label>
-                                        <br />
-                                        <iframe style={iframeStyle} className="ipad-youtube" src={item[7].video}></iframe>
-                                        <br />
-                                        <label>{item[1].name + " -  Last Fm Page "}</label>
-                                        <a href={item[4].url}>&nbsp;&nbsp;{item[4].url}</a>
+                                            <hr className="section" id={item[1].name}/>
+                                            <h4>{item[1].name}</h4>
+                                            <span><img className="img-responsive img-circle center-block"src={item[5].small} />{" Playcount: " +
+                                             item[2].playcount + " Listeners: "}{item[3].listeners}</span>
+                                            <img style={imgStyle} className="img-responsive picture-frame center-block" src={item[0].large} />
+                                            <br />
+                                            <span style={spanStyleNotAv}><em>If video is not available the default is Peg board Nerds.</em></span>
+                                            <br />
+                                            <label>{item[1].name + " Video - YouTube API"}</label>
+                                            <br />
+                                            <div style={iframeStyle}>
+                                                <iframe className="ipad-youtube" src={item[7].video} allowFullScreen></iframe>
+                                            </div>
+                                            <br /><br /> <br /> <br /> <br />
+                                            <div style={linkStyle}>
+                                                <label>{item[1].name + " -  Last Fm Page "}</label>
+                                                <a href={item[4].url}>&nbsp;&nbsp;{item[4].url}</a>
+                                            </div>
                                         </div>
                                     )
-
                                 })}
                             </div>
                         </div>
