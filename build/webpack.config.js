@@ -11,6 +11,7 @@ const __DEV__ = project.env === 'development'
 const __TEST__ = project.env === 'test'
 const __PROD__ = project.env === 'production'
 
+
 const config = {
   entry: {
     normalize: [
