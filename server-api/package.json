@@ -1,0 +1,33 @@
+{
+  "name": "apiserver",
+  "version": "1.0.0",
+  "description": "Back end for my react project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanWeatherbee/apiServer.git"
+  },
+  "keywords": [
+    "react",
+    "mongodb",
+    "express",
+    "node"
+  ],
+  "author": "Dan Weatherbee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanWeatherbee/apiServer/issues"
+  },
+  "homepage": "https://github.com/DanWeatherbee/apiServer#readme",
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  }
+}

@@ -77,7 +77,7 @@ class NavLinks extends Component {
                 );
         }
 }
-// =============================== TODO call a onclick==>  window reload when navigating to home for api.
+
 
 
 
