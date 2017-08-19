@@ -19,7 +19,7 @@ const spanStyleNotAv = {
 }
 
 const linkStyle = {
-    paddingTop: "13.75%"
+    paddingTop: "25%"
 }
 
 const iframeStyle = {
