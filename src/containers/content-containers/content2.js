@@ -1,8 +1,9 @@
-    import React, {Component} from 'react';
+// Back End
+
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
-/*
- * We need "if(!this.props.links)" because we set state to null by default
- * */
+import { bground } from '../../reducers/reducer-content-images';
+
 
 class Content2 extends Component {
 
@@ -12,7 +13,7 @@ class Content2 extends Component {
         }
             return(
                 <div>
-                    <div>{this.props.content[2].text}</div>
+                    {"hello world"}
                 </div>
                 );
     }
@@ -21,7 +22,8 @@ class Content2 extends Component {
 // "state.content" is set in reducers/index.js
 function mapStateToProps(state) {
     return {
-        content: state.content
+        content: state.content,
+        bground: state.bground
     };
 }
 

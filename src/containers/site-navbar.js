@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 // import {bindActionCreators} from 'redux';
 // import {navPageSelect} from '../actions/index';
 import {connect} from 'react-redux';
-import YouTube from '../containers/youtube-container';
+
+
 
 import {
   BrowserRouter as Router,
@@ -14,19 +15,12 @@ import LastFm from '../containers/lastfm';
 import Content0 from '../containers/content-containers/content0';
 import Content1 from '../containers/content-containers/content1';
 import Content2 from '../containers/content-containers/content2';
-import Content3 from '../containers/content-containers/content3';
-import Content4 from '../containers/content-containers/content4';
-import Content5 from '../containers/content-containers/content5';
-import Content6 from '../containers/content-containers/content6';
-import Content7 from '../containers/content-containers/content7';
-import Content8 from '../containers/content-containers/content8';
+import YouTube from '../containers/youtube-container';
 import HeaderView from '../components/header-view';
 import Parallax from '../containers/parallax';
 import '../javascripts/lib/jquery-2.2.3.min.js';
 import '../javascripts/bootstrap/collapse.js';
-/*
- * We need "if(!this.props.links)" because we set state to null by default
- * */
+
 const linkStyle = {
     textTransform: "uppercase"
 }
@@ -58,6 +52,7 @@ class NavLinks extends Component {
                                                 <li style={linkStyle}><Link to="/features">Features</Link></li>
                                                 <li style={linkStyle}><Link to="/stack">Stack</Link></li>
                                                 <li style={linkStyle}><Link to="/api">Music Api</Link></li>
+                                                <li style={linkStyle}><Link to="/backend">Back End</Link></li>
                                             </ul>
                                           </div>
 
@@ -68,8 +63,9 @@ class NavLinks extends Component {
                                 <Route exact path="/" component={HeaderView}/>
                                 <Route path="/about" component={Content0}/>
                                 <Route path="/features" component={Parallax}/>
-                                <Route path="/stack" component={Content8}/>
+                                <Route path="/stack" component={Content1}/>
                                 <Route path="/api" component={YouTube}/>
+                                <Route path="/backend" component={Content2}/>
                           </div>
                   </div>
       </Router>

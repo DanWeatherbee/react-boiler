@@ -30,7 +30,8 @@ class LastFm extends Component {
 return (
     <article style={style}>
         <h1 style={h1Style}>Top 50 Artists</h1>
-        <YouTube />
+
+        <YouTube/>
    </article>
 );
     }

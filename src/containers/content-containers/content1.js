@@ -1,14 +1,9 @@
+// Stack
+
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { bground } from '../../reducers/reducer-content-images';
-/*
- * We need "if(!this.props.links)" because we set state to null by default
- * */
-const imgStyle = {
-    maxWidth: "20%",
-    maxHeight: "700px",
-    margin: "2%"
-}
+
 
 class Content1 extends Component {
 
@@ -17,12 +12,12 @@ class Content1 extends Component {
             return (<div>no content</div>);
         }
             return(
-                <div className="parallax">
-                    <img className="picture-frame" style={imgStyle} src={this.props.bground[10].src} />
-                    <div className="text-right">
-                    <h1>Front End Ninja</h1>
-                    {this.props.content[1].text}
-                    </div>
+                <div>
+                <div>{this.props.content[1].text}</div>
+                <br />
+                 <div>{this.props.content[1].text2}</div>
+                 <br />
+                 <img className="img-responsive" src={this.props.bground[3].src} />
                 </div>
                 );
     }

@@ -38,7 +38,7 @@ class YouTube extends Component {
                         // $.getJSON("http://jsonip.com/?callback=?", function (data) {
                         //     window.location="http://" + data.ip + ":3000";
                         // });
-                        window.location="http://24.70.32.105:3000";
+                        window.location="http://localhost";
                     }
             }
 

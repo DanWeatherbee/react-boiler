@@ -1,11 +1,9 @@
+// About
+
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { bground } from '../../reducers/reducer-content-images';
 
-
-/*
- * We need "if(!this.props.links)" because we set state to null by default
- * */
 
 class Content0 extends Component {
 
