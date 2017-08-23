@@ -42,7 +42,7 @@ class NavLinks extends Component {
                                                 <span className="icon-bar"></span>
                                               </button>
                                               <div className="navbar-brand">
-                                                Dan Weatherbee
+                                                <h5>Dan Weatherbee</h5>
                                                </div>
                                         </div>
                                         <div className="collapse navbar-collapse" id="myNavbar">

@@ -22,10 +22,12 @@ class HeaderView extends React.Component {
                 <div className="container">
                         <div className="row text-center">
                                 <div className="col-md-2">
-                                        <h3 style={hStyle}>React Redux Sass</h3>
+                                        <h3 style={hStyle}>React Redux Mongo</h3>
                                 </div>
                                 <div className="col-md-8 text-center">
-                                        <h1 style={hStyle}>Modern Single Page Web Developement</h1>
+                                        <h1 style={hStyle}>Modern Web Developement Stack</h1>
+                                        <br />
+                                        <h5 style={hStyle}>High Performance Responsive Single page App's</h5>
                                 </div>
                                 <div className="col-md-2">
                                         <h3 style={hStyle}>Weback Build System</h3>
