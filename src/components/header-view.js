@@ -19,18 +19,17 @@ class HeaderView extends React.Component {
 
     render () {
         return (
-                <div className="container">
+                <div>
                         <div className="row text-center">
                                 <div className="col-md-2">
-                                        <h3 style={hStyle}>React Redux Mongo</h3>
+                                        <h3>React Redux Mongo</h3>
                                 </div>
                                 <div className="col-md-8 text-center">
-                                        <h1 style={hStyle}>Modern Web Developement Stack</h1>
-                                        <br />
-                                        <h5 style={hStyle}>High Performance Responsive Single page App's</h5>
+                                        <h1>Modern Web Developement Stack</h1>
+                                        <h5>High Performance Responsive Single page App's</h5>
                                 </div>
                                 <div className="col-md-2">
-                                        <h3 style={hStyle}>Weback Build System</h3>
+                                        <h3>Weback Build System</h3>
                                 </div>
                                 <img className="ipad" style={imgStyle} src={this.props.bground[13].src} />
                                 <img className="ipad" style={imgStyle2} src={this.props.bground[0].src} />

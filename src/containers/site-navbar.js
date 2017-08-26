@@ -42,11 +42,11 @@ class NavLinks extends Component {
                                                 <span className="icon-bar"></span>
                                               </button>
                                               <div className="navbar-brand">
-                                                <h5>Dan Weatherbee</h5>
+                                                <h4>Developer Dan Weatherbee</h4>
                                                </div>
                                         </div>
                                         <div className="collapse navbar-collapse" id="myNavbar">
-                                            <ul className="nav navbar-nav">
+                                            <ul className="nav navbar-nav navbar-right">
                                                 <li style={linkStyle}><Link to="/">Home</Link></li>
                                                 <li style={linkStyle}><Link to="/about">About</Link></li>
                                                 <li style={linkStyle}><Link to="/features">Features</Link></li>
@@ -55,7 +55,6 @@ class NavLinks extends Component {
                                                 <li style={linkStyle}><Link to="/backend">Back End</Link></li>
                                             </ul>
                                           </div>
-
                                     </div>
                             </nav>
                             <br /><br /><br />
@@ -73,14 +72,6 @@ class NavLinks extends Component {
                 );
         }
 }
-
-
-
-
-
-
-
-
 
 /*
 // "state.navLinks" is set in reducers/index.js

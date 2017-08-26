@@ -6,10 +6,27 @@ const webpackConfig = require('../build/webpack.config')
 const project = require('../project.config')
 const compress = require('compression')
 const app = express()
-const DbConnect =  require('./db')
-app.use(compress())
 
- DbConnect();
+app.use(compress())
+var mongoose = require('mongoose');
+var mongodbUri = require('mongodb-uri');
+
+//db config -- REPLACE USERNAME/PASSWORD/DATABASE WITH YOUR OWN FROM MLAB!
+// var mongoDB = 'mongodb://cyberdan2101:Dan210101!@ds155587.mlab.com:55587/db-api-1';
+var mongoDB = 'mongodb://localhost:27017';
+
+mongoose.connect(mongoDB, { useMongoClient: true })
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+db.once('open', function callback () {
+    console.log('Successfully connected to MongoDB');
+});
+
+
+
+
+
 // ------------------------------------
 // Apply Webpack HMR Middleware
 // ------------------------------------

@@ -29,6 +29,9 @@ class Content2 extends Component {
                     <h3>Before the fix was applied the result was: </h3>
                     <br />
                     <img className="img-responsive" src={this.props.bground[9].src} />
+                    <br />
+                    <h3>Conclusion</h3>
+                    <p>{this.props.content[2].text5}</p>
                 </div>
                 );
     }

@@ -28,15 +28,15 @@ class Parallax extends Component {
                     <br />
                     <h3 style={style}>Scalable Application &#9989;</h3>
                     <br />
-                    <h3 style={style}>Advanced Programming using the react-redux ecosystem. &#9989;</h3>
+                    <h3 style={style}>React Redux Mongo Webpack Ecosystem. &#9989;</h3>
                     <br />
                     <h3 style={style}>Built using Best Practices. &#9989;</h3>
                     <br />
                     <h3 style={style}>Coded using Java Scripts's MVM Pattern. &#9989;</h3>
                     <br />
-                    <h3 style={style}>MERN Stack with MongoDB. &#9989;</h3>
+                    <h3 style={style}>MERN Stack MongoDB Mongoose Axios. &#9989;</h3>
                     <br />
-                    <h3 style={style}>Last Fm API. &#9989;</h3>
+                    <h3 style={style}>Last Fm API. &#9989; YouTube API. &#9989;</h3>
                 </div>
                 );
     }

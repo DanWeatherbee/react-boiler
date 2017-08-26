@@ -44,22 +44,7 @@ const config = {
       __DEV__,
       __TEST__,
       __PROD__,
-    }, project.globals)),
-    /*
-      Webpack tries to load unnecessary low level dependencies for mongo and mongoose.
-      Extensive research finally relieved a work around.
-      Fix: https://github.com/webpack/webpack/issues/3404
-      This worked for now, otherwise you cannot import either of the above lib's.
-      <==============================>
-      */
-
-    new webpack.DefinePlugin({
-  "typeof window": "\"object\""
-})
-
-    /*
-    <==============================>
-    */
+    }, project.globals))
   ],
 }
 
