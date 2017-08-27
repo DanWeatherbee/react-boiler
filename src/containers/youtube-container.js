@@ -46,7 +46,10 @@ class YouTube extends Component {
 
             return(
                         <div className="text-center">
-                            <h1>Top 50 Artisists Last FM API</h1>
+                            <h1>Top 50 Artisists - | Last FM | YouTube | - API's</h1>
+                            <h4>On website load dual apis feed data to my algorithym, proccessed into a reducer array and used as a prop in the application.</h4>
+                            <h4>I used css image splicing to create frames around the image and iframe elements.</h4>
+                            <h5>Refresh to reload Api If screen is blank.</h5>
                             <div style={style}>
                                 {this.error()}
                                 {this.props.api.map((item) => {

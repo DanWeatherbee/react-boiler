@@ -12,14 +12,9 @@ const style = {
   margin: "2em"
 }
 
-const articleStyle = {
+const divStyle = {
   backgroundColor: "#494956",
   padding: "5%"
-}
-
-const h1Style = {
-  textAlign: "left",
-  paddingLeft: "1%"
 }
 
 
@@ -27,13 +22,8 @@ class LastFm extends Component {
 
     render() {
 
-return (
-    <article style={style}>
-        <h1 style={h1Style}>Top 50 Artists</h1>
+return <YouTube/>
 
-        <YouTube/>
-   </article>
-);
     }
 }
 
