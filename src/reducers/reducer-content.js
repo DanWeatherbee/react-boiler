@@ -7,7 +7,7 @@ export default function () {
     return [
         {
             con: 0,
-            text: "This is the starting point of my new cutting edge React-Redux-Mongo-Webpack Developers Environment complete with compilers, automated asset optimization and deployment. I have integrated several other library's as well, including Bootstrap and jQuery. So far I am just barely getting started. MongoDB has been added in as the back-end.",
+            text: "This Website is running off my Desktop in a Node Server and is the starting point of my new cutting edge React-Redux-Mongo-Webpack Developers Environment complete with compilers, automated asset optimization and deployment. So far I am just barely getting started. MongoDB has been added in as the back-end.",
             text2: "What is a Redux? Redux is a predictable state container for JavaScript App's. (If you're looking for a WordPress framework, check out Redux Framework.) It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
             text3: "What is react? React is a declarative, efficient, and flexible JavaScript library for building user interfaces. ... Your components tell React what you want to render – then React will efficiently update and render just the right components when your data changes.",
             text4: "Emulated page to page navigation is achieved using react-router. The site is indeed a single page that appears to be several pages."
