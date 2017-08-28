@@ -13,6 +13,7 @@ class Content1 extends Component {
         }
             return(
                 <div>
+                <h2>Stack</h2>
                 <div>{this.props.content[1].text}</div>
                 <br />
                  <div>{this.props.content[1].text2}</div>

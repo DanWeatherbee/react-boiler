@@ -30,7 +30,12 @@ class NavLinks extends Component {
 
     render() {
             return(
+/*
 
+                              TODO   CREATE A BIO PAGE
+
+
+*/
         <Router>
                       <div>
                             <nav className="navbar navbar-default navbar-inverse navbar-fixed-top">
@@ -42,7 +47,7 @@ class NavLinks extends Component {
                                                 <span className="icon-bar"></span>
                                               </button>
                                               <div className="navbar-brand">
-                                                <span>Dan Weatherbee</span>
+                                                <span>Dan Weatherbee Developer</span>
                                                </div>
                                         </div>
                                         <div className="collapse navbar-collapse" id="myNavbar">

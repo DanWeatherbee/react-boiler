@@ -13,6 +13,7 @@ class Content0 extends Component {
         }
             return(
                     <div>
+                        <h2>About</h2>
                         <div>{this.props.content[0].text}</div>
                         <br />
                         <img className="img-responsive" src={this.props.bground[2].src} />

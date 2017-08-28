@@ -15,6 +15,10 @@ const hStyle = {
         color: "#00a1ff"
 }
 
+const btnStyle = {
+    margin: "1.1em"
+}
+
 class HeaderView extends React.Component {
 
     render () {
@@ -22,12 +26,11 @@ class HeaderView extends React.Component {
                 <div>
 
                         <div className="row text-center">
-                                <div><h4>Projects:</h4>
-                                <span>
-                                    <a href="https://danweatherbee.github.io/portfolio/">My Portfolio | </a>
-                                    <a href="http://kasperdentureclinic.ca/">Kasper Denture Clinic
-                                    | </a>
-                                    <a href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
+                                <div>
+                                <span>Projects:
+                                    <a className="btn btn-success" style={btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
+                                    <a className="btn btn-info" style={btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
+                                    <a className="btn btn-warning" style={btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
                                 </span>
                                 </div>
                                 <div className="col-md-2">
