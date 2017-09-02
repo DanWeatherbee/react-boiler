@@ -4,12 +4,14 @@ import NavLinks from '../reducers/reducer-nav-links';
 import Content from '../reducers/reducer-content';
 import ContentBackGround from '../reducers/reducer-content-images';
 import LastFm from '../reducers/reducer-api';
+import Styles from '../reducers/reducer-styles';
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
     navLinks: NavLinks,
     content: Content,
     bground: ContentBackGround,
-    api: LastFm
+    api: LastFm,
+    styles: Styles
   })
 }
 

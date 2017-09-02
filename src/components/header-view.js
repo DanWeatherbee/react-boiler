@@ -2,35 +2,20 @@ import React from 'react';
 import { bground } from '../reducers/reducer-content-images';
 import {connect} from 'react-redux';
 import { api } from '../reducers/reducer-api';
-const imgStyle = {
-    maxWidth: "20%",
-    maxHeight: "700px",
-    margin: "2%"
-}
-const imgStyle2 = {
-    maxWidth: "50%",
-    maxHeight: "700px"
-}
-const hStyle = {
-        color: "#00a1ff"
-}
-
-const btnStyle = {
-    margin: "1.1em"
-}
+import { styles } from '../reducers/reducer-styles';
 
 class HeaderView extends React.Component {
 
     render () {
         return (
-                <div>
+                <div className="container">
 
                         <div className="row text-center">
                                 <div>
                                 <span>Projects:
-                                    <a className="btn btn-success" style={btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
-                                    <a className="btn btn-info" style={btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
-                                    <a className="btn btn-warning" style={btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
+                                    <a className="btn btn-success" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
+                                    <a className="btn btn-info" style={this.props.styles[0].headerView.btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
+                                    <a className="btn btn-warning" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
                                 </span>
                                 </div>
                                 <div className="col-md-2">
@@ -43,9 +28,9 @@ class HeaderView extends React.Component {
                                 <div className="col-md-2">
                                         <h3>Weback Build System</h3>
                                 </div>
-                                <img className="ipad" style={imgStyle} src={this.props.bground[13].src} />
-                                <img className="ipad" style={imgStyle2} src={this.props.bground[0].src} />
-                                <img className="ipad" style={imgStyle} src={this.props.bground[7].src} />
+                                <img className="ipad" style={this.props.styles[0].headerView.imgStyle} src={this.props.bground[7].src} />
+                                <img className="ipad" style={this.props.styles[0].headerView.imgStyle2} src={this.props.bground[5].src} />
+                                <img className="ipad" style={this.props.styles[0].headerView.imgStyle} src={this.props.bground[13].src} />
                                 <br />
                         </div>
                 </div>
@@ -58,7 +43,8 @@ class HeaderView extends React.Component {
 function mapStateToProps(state) {
     return {
         bground: state.bground,
-        api: state.api
+        api: state.api,
+        styles: state.styles
     };
 }
 

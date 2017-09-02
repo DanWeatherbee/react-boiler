@@ -12,7 +12,7 @@ class Content0 extends Component {
             return (<div>no content</div>);
         }
             return(
-                    <div>
+                    <div className="container">
                         <h2>About</h2>
                         <div>{this.props.content[0].text}</div>
                         <br />

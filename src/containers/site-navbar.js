@@ -63,7 +63,7 @@ class NavLinks extends Component {
                                     </div>
                             </nav>
                             <br /><br /><br />
-                            <div className="container animated flipInX">
+                            <div className="animated flipInX">
                                 <Route exact path="/" component={HeaderView}/>
                                 <Route path="/about" component={Content0}/>
                                 <Route path="/features" component={Parallax}/>
