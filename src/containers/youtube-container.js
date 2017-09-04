@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { api } from '../reducers/reducer-api';
 import { bground } from '../reducers/reducer-content-images';
+import Stellar from '../javascripts/jquery.stellar.min';
 
+
+$('.parallax').stellar();
 const style = {
     color: "lightgrey",
     backgroundColor: "black",
@@ -10,7 +13,7 @@ const style = {
 }
 
 const imgStyle = {
-    width: "80%"
+    width: "40%"
 }
 
 const spanStyleNotAv = {
@@ -19,13 +22,13 @@ const spanStyleNotAv = {
 }
 
 const linkStyle = {
-    paddingTop: "25%"
+    paddingTop: "5%"
 }
 
 const iframeStyle = {
     width: "100%",
-    height: 0,
-    paddingBottum: "56.25%",
+    height: "0",
+    paddingBottom: "5%",
     position: "relative"
 }
 
@@ -63,7 +66,7 @@ class YouTube extends Component {
 
                                     return (
 
-                                        <div key={item[6].id}>
+                                        <div key={item[6].id} className="parallax">
                                             <hr className="section" id={item[1].name}/>
                                             <h4>{item[1].name}</h4>
                                             <span><img className="img-responsive img-circle center-block"src={item[5].small} />{" Playcount: " +
@@ -80,7 +83,7 @@ class YouTube extends Component {
                                             <br /><br /> <br /> <br /> <br />
                                             <div style={linkStyle}>
                                                 <label>{item[1].name + " -  Last Fm Page "}</label>
-                                                <a href={item[4].url}>&nbsp;&nbsp;{item[4].url}</a>
+                                                <a href={item[4].url} className="hover-green">&nbsp;&nbsp;{item[4].url}</a>
                                             </div>
                                         </div>
                                     )
