@@ -6,6 +6,7 @@
 
 body {
   padding: 0;
+
 }
 
 .parallax {
@@ -21,6 +22,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 1px 1px 2px black;
+}
+
+.gradient {
+background: rgb(174,188,191);
+background: -moz-linear-gradient(-45deg, rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%);
+background: -webkit-linear-gradient(-45deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+background: linear-gradient(135deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=1 );
+color: white;
+padding: 3%;
+font-size: 1.5em;
+text-shadow: 1px 1px 2px black;
 }
 
 .hover-green:hover {
@@ -64,6 +77,10 @@ body {
   box-shadow: 0px 24px 35px 0px rgba(255, 255, 255, 1);
 }
 
+#footer {
+  padding-top: 5%;
+}
+
 @media screen and (max-width: 600px) {
   .ipad {
     display: none;
@@ -73,7 +90,15 @@ body {
     border-width: 1px;
   }
 
-  .content-view {
-    font-size: 1em;
+  .gradient {
+  background: rgb(174,188,191);
+  background: -moz-linear-gradient(-45deg, rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+  background: linear-gradient(135deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=1 );
+  color: white;
+  padding-top: 10%;
+  font-size: 1em;
   }
+
 }

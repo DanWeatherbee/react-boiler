@@ -2,12 +2,9 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { api } from '../reducers/reducer-api';
 import { bground } from '../reducers/reducer-content-images';
-import Stellar from '../javascripts/jquery.stellar.min';
 
-
-$('.parallax').stellar();
 const style = {
-    color: "lightgrey",
+    color: "white",
     backgroundColor: "black",
     position: "relative"
 }
@@ -22,7 +19,7 @@ const spanStyleNotAv = {
 }
 
 const linkStyle = {
-    paddingTop: "5%"
+    paddingTop: "15%"
 }
 
 const iframeStyle = {

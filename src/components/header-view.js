@@ -1,3 +1,5 @@
+//Home
+
 import React from 'react';
 import { bground } from '../reducers/reducer-content-images';
 import {connect} from 'react-redux';
@@ -11,12 +13,10 @@ class HeaderView extends React.Component {
                 <div className="container">
 
                         <div className="row text-center">
-                                <div>
-                                <span>Projects:
-                                    <a className="btn btn-success" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
-                                    <a className="btn btn-info" style={this.props.styles[0].headerView.btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
-                                    <a className="btn btn-warning" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
-                                </span>
+                                <div id="projects">Projects:
+                                    <a className="btn-lg btn-success" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
+                                    <a className="btn-lg btn-info" style={this.props.styles[0].headerView.btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
+                                    <a className="btn-lg btn-warning" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
                                 </div>
                                 <div className="col-md-2">
                                         <h3>React Redux Mongo</h3>

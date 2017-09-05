@@ -1,13 +1,12 @@
 
 // View Container Variables
 
-$content-view-text-color: black;
+
 $content-view-font-size: 1.5em;
-$content-view-padding: 1em;
+$content-view-padding: 10em;
 
 // View Container
 .content-view {
-  color: $content-view-text-color;
   font-size: $content-view-font-size;
   padding-bottom: $content-view-padding;
   padding-top: $content-view-padding;
