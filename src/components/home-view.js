@@ -6,17 +6,19 @@ import {connect} from 'react-redux';
 import { api } from '../reducers/reducer-api';
 import { styles } from '../reducers/reducer-styles';
 
-class HeaderView extends React.Component {
+class HomeView extends React.Component {
 
     render () {
         return (
                 <div className="container">
 
                         <div className="row text-center">
-                                <div id="projects">Projects:
-                                    <a className="btn-lg btn-success" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
-                                    <a className="btn-lg btn-info" style={this.props.styles[0].headerView.btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
-                                    <a className="btn-lg btn-warning" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
+                        <h4>Projects:</h4>
+                                <div id="projects">
+
+                                    <a className="btn-lg btn-success links" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
+                                    <a className="btn-lg btn-info links" style={this.props.styles[0].headerView.btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
+                                    <a className="btn-lg btn-warning links" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
                                 </div>
                                 <div className="col-md-2">
                                         <h3>React Redux Mongo</h3>
@@ -32,6 +34,7 @@ class HeaderView extends React.Component {
                                 <img className="ipad" style={this.props.styles[0].headerView.imgStyle2} src={this.props.bground[5].src} />
                                 <img className="ipad" style={this.props.styles[0].headerView.imgStyle} src={this.props.bground[13].src} />
                                 <br />
+                                <img style={this.props.styles[0].headerView.imgStyle} src={this.props.bground[0].src} />
                         </div>
                 </div>
                 );
@@ -48,4 +51,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(HeaderView);
+export default connect(mapStateToProps)(HomeView);

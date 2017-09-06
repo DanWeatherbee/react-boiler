@@ -13,26 +13,17 @@ class Content2 extends Component {
         }
             return(
                 <div className="container">
-                    <h2>Back End</h2>
-                    <h3>{this.props.content[2].text}</h3>
-                    <div>
-                        <h4>Quote: {this.props.content[2].text1}.</h4>
-                        <br />
-                        <article>
-                            {this.props.content[2].text2}<br />{this.props.content[2].text3}
-                        </article>
-                    </div>
-                    <br />
-                    <img className="img-responsive" src={this.props.bground[6].src} />
-                    <br />
-                    <p>{this.props.content[2].text4}</p>
-                    <br />
-                    <h3>Before the fix was applied the result was: </h3>
-                    <br />
-                    <img className="img-responsive" src={this.props.bground[9].src} />
-                    <br />
-                    <h3>Conclusion</h3>
-                    <p>{this.props.content[2].text5}</p>
+                            <h2>Back End</h2>
+                            <h3>{this.props.content[2].text}</h3>
+                            <p>{this.props.content[2].text1}</p>
+                            <p>{this.props.content[2].text2}</p>
+                            <p>{this.props.content[2].text3}</p>
+                            <img className="img-responsive" src={this.props.bground[6].src} />
+                            <p>{this.props.content[2].text4}</p>
+                            <h3>Before the fix was applied the result was: </h3>
+                            <img className="img-responsive" src={this.props.bground[9].src} />
+                            <h3>Conclusion</h3>
+                            <p>{this.props.content[2].text5}</p>
                 </div>
                 );
     }

@@ -3,45 +3,43 @@
 @import '../stylesheets/_bootstrap';
 @import 'animate.min.css';
 // App Variables
-
 body {
   padding: 0;
-
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("../images/bg-2.jpg");
+  /* The image used */
+  background-image: url("../images/bg-5.jpg");
 
-    /* Set a specific height */
-    min-height: 500px;
+  /* Set a specific height */
+  min-height: 500px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-shadow: 1px 1px 2px black;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 1px 1px 2px black;
 }
 
 .gradient {
-background: rgb(174,188,191);
-background: -moz-linear-gradient(-45deg, rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%);
-background: -webkit-linear-gradient(-45deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
-background: linear-gradient(135deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=1 );
-color: white;
-padding: 3%;
-font-size: 1.5em;
-text-shadow: 1px 1px 2px black;
+  background: #4c4c4c;
+  background: -moz-radial-gradient(center, ellipse cover, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  background: radial-gradient(ellipse at center, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1);
+  color: white;
+  padding: 3%;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px black;
 }
 
 .hover-green:hover {
-   color: lawngreen;
+  color: lawngreen;
 }
 
 .hover-green {
-   color: red;
+  color: red;
 }
 
 .ipad {
@@ -72,9 +70,9 @@ text-shadow: 1px 1px 2px black;
 }
 
 .links:hover {
-  -webkit-box-shadow: 0px 24px 35px 0px rgba(255, 255, 255, 1);
-  -moz-box-shadow: 0px 24px 35px 0px rgba(255, 255, 255, 1);
-  box-shadow: 0px 24px 35px 0px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: -1px 10px 5px -4px white;
+-moz-box-shadow: -1px 10px 5px -4px white;
+box-shadow: -1px 10px 5px -4px white;
 }
 
 #footer {
@@ -91,14 +89,44 @@ text-shadow: 1px 1px 2px black;
   }
 
   .gradient {
-  background: rgb(174,188,191);
-  background: -moz-linear-gradient(-45deg, rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%);
-  background: -webkit-linear-gradient(-45deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
-  background: linear-gradient(135deg, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=1 );
-  color: white;
-  padding-top: 10%;
-  font-size: 1em;
+    background: #4c4c4c;
+    background: -moz-radial-gradient(center, ellipse cover, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: radial-gradient(ellipse at center, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1);
+    color: white;
+    padding-top: 10%;
+    font-size: 1em;
   }
 
+  #projects {
+    color: red;
+    display: flex;
+  }
+
+  .btn-lg {
+    padding: .5em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ipad {
+    display: none;
+  }
+  .ipad-youtube {
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .gradient {
+    background: #4c4c4c;
+    background: -moz-radial-gradient(center, ellipse cover, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    background: radial-gradient(ellipse at center, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1);
+    color: white;
+    padding-top: 10%;
+    font-size: 1em;
+  }
 }

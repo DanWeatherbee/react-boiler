@@ -16,7 +16,7 @@ import Content0 from '../containers/content-containers/content0';
 import Content1 from '../containers/content-containers/content1';
 import Content2 from '../containers/content-containers/content2';
 import YouTube from '../containers/youtube-container';
-import HeaderView from '../components/header-view';
+import HomeView from '../components/home-view';
 import Parallax from '../containers/parallax';
 import '../javascripts/lib/jquery-2.2.3.min.js';
 import '../javascripts/bootstrap/collapse.js';
@@ -46,32 +46,29 @@ class NavLinks extends Component {
                                                 <span className="icon-bar"></span>
                                                 <span className="icon-bar"></span>
                                               </button>
-                                              <div className="navbar-brand">
+                                              <div className="navbar-brand links">
                                                 <span>Dan Weatherbee Developer</span>
                                                </div>
                                         </div>
                                         <div className="collapse navbar-collapse" id="myNavbar">
                                             <ul className="nav navbar-nav navbar-right">
-                                                <li style={linkStyle}><Link to="/">Home</Link></li>
-                                                <li style={linkStyle}><Link to="/about">About</Link></li>
-                                                <li style={linkStyle}><Link to="/features">Features</Link></li>
-                                                <li style={linkStyle}><Link to="/stack">Stack</Link></li>
-                                                <li style={linkStyle}><Link to="/api">Music Api</Link></li>
-                                                <li style={linkStyle}><Link to="/backend">Back End</Link></li>
+                                                <li className="links" style={linkStyle}><Link to="/">Home</Link></li>
+                                                <li className="links" style={linkStyle}><Link to="/about">About</Link></li>
+                                                <li className="links" style={linkStyle}><Link to="/features">Features</Link></li>
+                                                <li className="links" style={linkStyle}><Link to="/stack">Stack</Link></li>
+                                                <li className="links" style={linkStyle}><Link to="/api">Music Api</Link></li>
+                                                <li className="links" style={linkStyle}><Link to="/backend">Back End</Link></li>
                                             </ul>
                                           </div>
                                     </div>
                             </nav>
                             <div className="animated gradient">
-                                <Route exact path="/" component={HeaderView}/>
+                                <Route exact path="/" component={HomeView}/>
                                 <Route path="/about" component={Content0}/>
                                 <Route path="/features" component={Parallax}/>
                                 <Route path="/stack" component={Content1}/>
                                 <Route path="/api" component={YouTube}/>
                                 <Route path="/backend" component={Content2}/>
-                          </div>
-                            <div id="footer">
-
                           </div>
                   </div>
       </Router>
