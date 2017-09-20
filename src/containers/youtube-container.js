@@ -51,6 +51,9 @@ class YouTube extends Component {
                             <h4>I used css image splicing to create frames around the image and iframe elements.</h4>
                             <h5>If page is blank you can</h5>
                             <a  className="hover-green" onClick={function(){window.location="http://24.70.52.145/api";alert("Api call completed. After refresh. Click Music Api to load.");}}>Call the Api</a>
+                            <br />
+                            <p>I am building a object class for calling api's that will replace this(async in a javascript object - Fast.), check it out. - </p>
+                            <a href="http://24.70.32.148:8011/">Api Caller Class Demo</a>
                             <div style={style}>
                                 {this.error()}
                                 {this.props.api.map((item) => {

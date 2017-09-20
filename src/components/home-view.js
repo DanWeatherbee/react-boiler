@@ -13,13 +13,16 @@ class HomeView extends React.Component {
                 <div className="container">
 
                         <div className="row text-center">
+                        <a className="btn-lg btn-default links" style={this.props.styles[0].headerView.btnStyle} href="https://github.com/DanWeatherbee">GitHub</a>
                         <h4>Projects:</h4>
                                 <div id="projects">
 
                                     <a className="btn-lg btn-success links" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
                                     <a className="btn-lg btn-info links" style={this.props.styles[0].headerView.btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
                                     <a className="btn-lg btn-warning links" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
+
                                 </div>
+
                                 <div className="col-md-2">
                                         <h3>React Redux Mongo</h3>
                                 </div>
