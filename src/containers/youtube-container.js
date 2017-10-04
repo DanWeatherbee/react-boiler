@@ -47,7 +47,7 @@ class YouTube extends Component {
             return(
                         <div className="text-center">
                             <h1>Top 50 Artisists - | Last FM | YouTube | - API's</h1>
-                            <h4>On website load dual apis feed data to my algorithym, injected into a reducer array and called from the Store(prop-types) as a prop in the application.</h4>
+                            <h4>On website load, dual apis feed data to my algorithym, injected into a reducer array and called from the Store(prop-types) as a prop in the application.</h4>
                             <h4>I used css image splicing to create frames around the image and iframe elements.</h4>
                             <h5>If page is blank you can</h5>
                             <a  className="hover-green" onClick={function(){window.location="http://24.70.32.148/api";alert("Api call completed. After refresh. Click Music Api to load.");}}>Call the Api</a>
@@ -94,7 +94,7 @@ class YouTube extends Component {
     }
 }
 
-// "state.content0" is set in reducers/index.js
+
 function mapStateToProps(state) {
     return {
         api: state.api,

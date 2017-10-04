@@ -1,18 +1,20 @@
-const express = require('express')
-const path = require('path')
-const webpack = require('webpack')
-const logger = require('../build/lib/logger')
-const webpackConfig = require('../build/webpack.config')
-const project = require('../project.config')
-const compress = require('compression')
-const app = express()
+const express = require('express');
+const path = require('path');
+const webpack = require('webpack');
+const logger = require('../build/lib/logger');
+const webpackConfig = require('../build/webpack.config');
+const project = require('../project.config');
+const compress = require('compression');
+const app = express();
 
-app.use(compress())
+app.use(compress());
+
+/*
 var mongoose = require('mongoose');
 var mongodbUri = require('mongodb-uri');
 
-//db config -- REPLACE USERNAME/PASSWORD/DATABASE WITH YOUR OWN FROM MLAB!
-// var mongoDB = 'mongodb://cyberdan2101:Dan210101!@ds155587.mlab.com:55587/db-api-1';
+db config -- REPLACE USERNAME/PASSWORD/DATABASE WITH YOUR OWN FROM MLAB!
+var mongoDB = 'mongodb://cyberdan2101:Dan210101!@ds155587.mlab.com:55587/db-api-1';
 var mongoDB = 'mongodb://localhost:27017';
 
 mongoose.connect(mongoDB, { useMongoClient: true })
@@ -23,13 +25,10 @@ db.once('open', function callback () {
     console.log('Successfully connected to MongoDB');
 });
 
-
-
-
-
-// ------------------------------------
-// Apply Webpack HMR Middleware
-// ------------------------------------
+------------------------------------
+Apply Webpack HMR Middleware
+------------------------------------
+*/
 if (project.env === 'development') {
   const compiler = webpack(webpackConfig)
 
