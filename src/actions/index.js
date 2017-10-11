@@ -15,7 +15,7 @@ export const navPageSelect = (linkSelected) => {
         type: 'LINK_SELECTED',
         payload: linkSelected
     }
-
 };
+
 
 

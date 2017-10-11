@@ -38,6 +38,8 @@ class HomeView extends React.Component {
                                 <img className="ipad" style={this.props.styles[0].headerView.imgStyle} src={this.props.bground[13].src} />
                                 <br />
                                 <img style={this.props.styles[0].headerView.imgStyle} src={this.props.bground[0].src} />
+                                <br />
+                                <span>Copyright  <i className="fa fa-copyright" aria-hidden="true"> Dan Weatherbee 2017</i></span>
                         </div>
                 </div>
                 );
