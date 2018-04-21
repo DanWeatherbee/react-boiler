@@ -71,8 +71,8 @@ body {
 
 .links:hover {
   -webkit-box-shadow: -1px 10px 5px -4px white;
--moz-box-shadow: -1px 10px 5px -4px white;
-box-shadow: -1px 10px 5px -4px white;
+  -moz-box-shadow: -1px 10px 5px -4px white;
+  box-shadow: -1px 10px 5px -4px white;
 }
 
 #footer {
@@ -138,4 +138,8 @@ box-shadow: -1px 10px 5px -4px white;
     padding-top: 10%;
     font-size: 1em;
   }
+}
+
+#game-area {
+  position: fixed;
 }

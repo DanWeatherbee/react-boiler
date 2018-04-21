@@ -18,7 +18,7 @@ class HomeView extends React.Component {
                                 <div id="projects">
 
                                     <a className="btn-lg btn-success links" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/portfolio/">My Portfolio</a>
-                                    <a className="btn-lg btn-info links" style={this.props.styles[0].headerView.btnStyle} href="http://kasperdentureclinic.ca/">Kasper Denture Clinic</a>
+                                    <a className="btn-lg btn-info links" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/kasperdentureclinic/src/">Kasper Denture Clinic</a>
                                     <a className="btn-lg btn-warning links" style={this.props.styles[0].headerView.btnStyle} href="https://danweatherbee.github.io/PayRoll-App/src/">Payroll App</a>
 
                                 </div>

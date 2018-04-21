@@ -53,7 +53,7 @@ class YouTube extends Component {
                             <a  className="hover-green" onClick={function(){window.location="http://24.70.32.148/api";alert("Api call completed. After refresh. Click Music Api to load.");}}>Call the Api</a>
                             <br />
                             <p>I am building a object class for calling api's that will replace this(async in a javascript object - Fast.), check it out. - </p>
-                            <a href="http://24.70.32.148:8011/">Api Caller Class Demo</a>
+                            <a href="https://danweatherbee.github.io/movie-api/src/">Api Caller Class Demo</a>
                             <div style={style}>
                                 {this.error()}
                                 {this.props.api.map((item) => {
